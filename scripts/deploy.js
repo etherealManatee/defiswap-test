@@ -29,13 +29,16 @@ async function main() {
     let ThePeopleContract = await ThePeopleFactory.deploy(
         KingToken.address,
         deployer.address,
-        hre.ethers.utils.parseEther("1"),
-        9246100,
-        9246220
+        hre.ethers.utils.parseEther("0.1"),
+        9249700,
+        9255460
     )
+
     let ThePeople = await ThePeopleContract.deployed()
     console.log("ThePeople address:", ThePeople.address)
 
+    await KingToken.transferOwnership(ThePeople.address)
+    console.log("transferred")
 }
 
 main()
