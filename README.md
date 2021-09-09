@@ -34,10 +34,12 @@ npm init -y
 npm install --save-dev hardhat
 npx hardhat
 npx hardhat compile
-npx test
+npx hardhat test
 ```
-2. 
+2. went to https://github.com/sushiswap/sushiswap/tree/canary/contracts and copy pasted the code that I needed
+3. using ```npx hardhat run scripts/run.js``` to test out deploying and functions on local machine to see if things work as intended
+4. using ```npx hardhat run scripts/deploy.js --network rinkeby``` to deploy on to the testnet
 
-
+# Challenges and Learning
 
 
