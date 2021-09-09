@@ -41,6 +41,6 @@ npx hardhat test
 4. using ```npx hardhat run scripts/deploy.js --network rinkeby``` to deploy on to the testnet
 
 # Challenges and Learning :blue_heart:
-######Uniswap v3
+###### Uniswap v3
 I started out wanting to fork V3, the first problem I faced was that there was a shit load of files, I gathered from a youtube video that you need both the core and periphery contracts. Initially, I just cloned the entire repo and there was a fear because I wasn't sure what files you need and do not need.
 
