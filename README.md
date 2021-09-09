@@ -26,7 +26,17 @@ Files taken from SushiSwap Github
 4. Be able to reward liquidity providers with a separate token
 
 # Steps taken
-This
+
+1. create an empty repo on github and then cloning it onto my own local machine, install hardhat, compile and test to make sure it works
+```
+git clone <url>
+npm init -y
+npm install --save-dev hardhat
+npx hardhat
+npx hardhat compile
+npx test
+```
+2. 
 
 
 
