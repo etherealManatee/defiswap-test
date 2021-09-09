@@ -1,4 +1,4 @@
-# KingSwap - DeFi exchange with rewards to liquidity provider
+# KingSwap:crown: - DeFi exchange with rewards to liquidity provider
 
 A decentralized finance exchange with staking of liquidity provider (LP) tokens to earn King token as reward. This project was created to test out deploying a DeFi exchange with the following goals:
 
@@ -40,6 +40,6 @@ npx hardhat test
 3. using ```npx hardhat run scripts/run.js``` to test out deploying and functions on local machine to see if things work as intended
 4. using ```npx hardhat run scripts/deploy.js --network rinkeby``` to deploy on to the testnet
 
-# Challenges and Learning
+# Challenges and Learning :blue_heart:
 
 
