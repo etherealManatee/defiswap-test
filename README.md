@@ -42,5 +42,10 @@ npx hardhat test
 
 # Challenges and Learning :blue_heart:
 ###### Uniswap v3
-I started out wanting to fork V3, the first problem I faced was that there was a shit load of files, I gathered from a youtube video that you need both the core and periphery contracts. Initially, I just cloned the entire repo and there was a fear because I wasn't sure what files you need and do not need.
+I started out wanting to fork V3, the first problem I faced was that there was a shit load of files, I gathered from a youtube video that you need both the core and periphery contracts. Initially, I just cloned the entire repo and there was a fear because I wasn't sure what files you need and do not need. So I tried testing ou t deploying the contracts locally. I started with just trying to deploy the factory from the core contracts, but was met with many errors that I could not figure out.
+
+I then decided to move to try to deploy uniswap-v2 instead, since there was less files it might be more straightforward.
+###### Uniswap v2
+This time instead of cloning the whole repo, I created a sample project using the steps under 'Steps taken' above. I figured that this allows me to stick with what I am comfortable with first. I successfully 
+
 
