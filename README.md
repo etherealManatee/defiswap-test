@@ -55,7 +55,7 @@ And thus, with more confident, I decided to look at SushiSwap's code to see how 
 It took me awhile to understand the functions of the different smart contacts in SushiSwap's github, eventually I figured that I only needed the MasterChef.sol and SushiToken.sol code. I was able to deploy both the Factory, Router, thePeople (MasterChef) and King token (Sushi token) succesfully to Rinkeby testnet. I was able to create a pair, add liquidity, swap and deposit LP tokens into thePeople. 
 
 However, once I deposit the LP tokens I was unable to withdraw the LP and claim the reward tokens (King token). It took me awhile, but by comparing the code in the Sushiswap repo and the Uniswap V2 repo, I realised that the problem was within the UniswapV2Library.sol. Under the function pairFor it required an init code hash. After some research, I found out that this init code hash is related to the factory, to obtaint he init code hash of the factory the following code was added to the factory contract.
-```
+```solidity
 bytes32 public constant INIT_CODE_PAIR_HASH = keccak256(abi.encodePacked(type(UniswapV2Pair).creationCode));
 
 function pairCodeHash() external pure returns (bytes32) {
