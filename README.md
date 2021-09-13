@@ -62,7 +62,7 @@ function pairCodeHash() external pure returns (bytes32) {
         return INIT_CODE_PAIR_HASH;
     }
 ```
-Next was to check whether the init code hash was the same when deployed locally and onto the testnet. It was the same. So I copied the init code hash and replaced it in my own code.
+Next was to check whether the init code hash was the same when deployed locally and onto the testnet. It was the same. So I copied the init code hash and replaced it in my own code, in UniswapV2Library.sol.
 ```solidity
 // calculates the CREATE2 address for a pair without making any external calls
     function pairFor(address factory, address tokenA, address tokenB) internal pure returns (address pair) {
@@ -75,3 +75,4 @@ Next was to check whether the init code hash was the same when deployed locally 
             ))));
     }
 ```
+Once this was done, I was able to withdraw the LP tokens and claim the rewards! YAY! 
