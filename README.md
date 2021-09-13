@@ -1,6 +1,8 @@
 # KingSwap:crown: - DeFi exchange with rewards to liquidity provider
 
-A decentralized finance exchange with staking of liquidity provider (LP) tokens to earn King token as reward. This project was created to test out deploying a DeFi exchange with the following goals:
+A decentralized finance exchange with staking of liquidity provider (LP) tokens to earn King token as reward. This project was created to test out deploying a DeFi exchange with goals as mentioned under 'Goals'. It was deployed on Rinkeby testnet, and a simple front end was created using replit.com to test out the functions of the smart contact.
+
+https://replit.com/@hizashi-zy/uniswapv2-test
 
 cloned from SushiSwap
 
@@ -46,6 +48,10 @@ I started out wanting to fork V3, the first problem I faced was that there was a
 
 I then decided to move to try to deploy uniswap-v2 instead, since there was less files it might be more straightforward.
 ###### Uniswap v2
-This time instead of cloning the whole repo, I created a sample project using the steps under 'Steps taken' above. I figured that this allows me to stick with what I am comfortable with first. I successfully 
+This time instead of cloning the whole repo, I created a sample project using the steps under 'Steps taken' above. I figured that this allows me to stick with what I am comfortable with first. I successfully managed to deploy the Factory locally, but the Router kept giving me an error of 'Transaction ran out of gas', and was unable to deploy it locally. It took me awhile to fix this problem, and it was solved by removing code from the smart contract that was deemed 'almost never used'.
+
+And thus, with more confident, I decided to look at SushiSwap's code to see how they reward their liquidity providers.
+###### SushiSwap
+It took me awhile to understand the functions of the different smart contacts in SushiSwap's github, eventually I figured that I only needed the MasterChef.sol and SushiToken.sol code. 
 
 
